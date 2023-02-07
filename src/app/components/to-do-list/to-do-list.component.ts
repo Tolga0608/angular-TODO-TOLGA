@@ -1,22 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { ToDoService } from '../../services/to-do.service';
+import { ToDoDataService } from '../../services/to-do.service';
 
 @Component({
   selector: 'app-to-do-list',
   templateUrl: './to-do-list.component.html',
-  styleUrls: ['./to-do-list.component.css']
+  styleUrls: ['./to-do-list.component.css'],
 })
 export class ToDoListComponent implements OnInit {
+  constructor(private ToDoDataService: ToDoDataService) {
 
-  constructor(private  toDoDataServices: ToDoDataServices) {
-
-   }
-   get toDos(): toDo[][] {
-
-    return this.toDoDataServices.toDos;
-   }
-
-  ngOnInit() {
+  }
+  get toDos(): ToDo[] {
+    return this.ToDoDataService.toDos;
   }
 
+  ngOnInit() {
+    
+  }
 }
