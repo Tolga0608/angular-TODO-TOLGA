@@ -11,5 +11,6 @@ export class ToDoDataService {
 
   constructor() {
     this.toDos.push(new ToDo('Putzen', true, '09.03.2022'));
+    this.toDos.push(new ToDo("Emre Tö", false,"Yeahh"))
   }
 }

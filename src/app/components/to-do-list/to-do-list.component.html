@@ -3,12 +3,12 @@
     <tr>
 <th>Beschreibung</th>
 <th>Termin/Frist</th>
+<th>
  </tr>
   </thead>
   <tbody>
     <tr *ngFor="let t of toDos">
       <td>{{t.description}}</td>
-      <td>{{t.done}}</td>
       <td>{{t.deadline}}</td>
     </tr>
   </tbody>
