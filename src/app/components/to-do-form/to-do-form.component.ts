@@ -11,7 +11,7 @@ export class ToDoFormComponent implements OnInit {
   toDo: ToDo;
 
   constructor(private toDoDataService:ToDoDataService) {
-    this.toDo = new ToDo(null,false,null);
+      this.toDo = new ToDo(null, false, null);
    }
    
   ngOnInit() {
