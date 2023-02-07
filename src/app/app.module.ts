@@ -8,7 +8,8 @@ import { ToDoDataService } from './services/to-do.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, HelloComponent, ToDoListComponent, ToDoDataService],
+  declarations: [AppComponent, HelloComponent, ToDoListComponent],
   bootstrap: [AppComponent],
+  providers: [ ToDoDataService]
 })
 export class AppModule {}
