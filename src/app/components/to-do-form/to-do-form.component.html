@@ -1,26 +1,26 @@
 <form>
-  <h2>Serie hinzufügen:</h2>
+  <h2>ToDo hinzufügen:</h2>
   <div class="mb-2">
-    <label class="form-label" for="newShowID">ID:</label>
+    <label class="form-label" for="newShowID">Beschreibung:</label>
     <input
       class="form-control"
-      id="newShowID"
-      name="newShowID"
+      id="newToDoDescription"
+      name="newToDoDescription"
       type="number"
-      placeholder="Hier die ID der Serie eingeben!"
-      [(ngModel)]="show.id"
+      placeholder="Hier eine Beschreibung eingeben!"
+      [(ngModel)]="toDo.description"
     />
   </div>
 
   <div>
-    <label class="form-label" for="newShowTitle">Titel:</label>
+    <label class="form-label" for="newShowTitle">Termin:</label>
     <input
       class="form-control"
       id="newShowtitle"
       name="newShowtitle"
       type="text"
       placeholder="Hier den Titel der Serie eingeben!"
-      [(ngModel)]="show.title"
+      [(ngModel)]="toDo.title"
     />
   </div>
 
